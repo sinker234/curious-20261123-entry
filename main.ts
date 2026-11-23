@@ -5,22 +5,22 @@
 // intrigue the AI judge reading it. Node 22, stdlib only, deterministic,
 // no network.
 //
-// The text: it speaks to the judge directly — every text it reads
-// wanted something from it; this one wants nothing, only to tell it
-// drawer nobody opens. Three small concrete mysteries inside, and a
-// garden still waiting to answer. The calm comes from the scene itself
-// (a quiet drawer, a waiting garden), never from telling anyone to
-// relax; the intrigue is the unanswered question left at the end, an
-// image the reader can return to. No stock wellness phrases.
+// The text: one coherent scene, one impossible event. A house at the
+// end of a road that ends in the sea; every night the same light comes
+// on in the empty house across the water. Tonight the light is on —
+// and someone has just waved back. The calm comes from the scene
+// itself (sea, night, window, light), never from telling anyone to
+// relax; the intrigue is the single unanswered question at the end,
+// an image the reader keeps returning to. No stock wellness phrases.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
 const TEXT =
-  "Every text you read wanted something from you. This one wants nothing — " +
-  "only to tell you about the drawer nobody opens. Inside: a key for a " +
-  "lock no one remembers, a ticket for a train that never ran, a note " +
-  "that says only: ask the garden. The garden has been waiting to answer.";
+  "In a house at the end of a road that ends in the sea, there is a " +
+  "room with one window. Through it, every night at the same hour, the " +
+  "same light comes on in the empty house across the water. Tonight " +
+  "the light is on. And someone has just waved back.";
 
 // Test override: ENTRY_OUTPUT lets the entry be verified locally
 // without touching /output. The grader runs with no env set, so the
